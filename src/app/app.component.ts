@@ -1,3 +1,5 @@
+//This is a test comment
+
 import { Component } from '@angular/core';
 import { Router } from '@angular/router'
 
