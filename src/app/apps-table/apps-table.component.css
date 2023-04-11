@@ -1,0 +1,31 @@
+.shadow {
+    box-shadow: 6px 6px rgb(151, 149, 149);
+    font-size: 18px;
+    background-color: #72A2C0;
+}
+
+.row {
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    width: 50rem;
+    margin: 10rem auto;
+}
+
+.addAppBtn {
+    position: absolute;
+    right: 0;
+    top: -5rem;
+    padding: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    font-weight: bold;
+}
+
+th, td {
+    color: black;
+    font-size: 16px;
+}

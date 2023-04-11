@@ -1,0 +1,20 @@
+.heading {
+    display: inline-block;
+    color: white;
+    padding: 0px;
+}
+
+.appBtn {
+    float: right;
+    padding: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.container {
+    background: #72A2C0;
+    padding: 12px;
+}
