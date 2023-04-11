@@ -9,12 +9,14 @@ import { AppsTableComponent } from './apps-table/apps-table.component';
 import { MatTableModule } from '@angular/material/table'  
 import {MatButtonModule} from '@angular/material/button';
 import { MatSortModule } from '@angular/material/sort';
+import { RuleSetsComponent } from './rule-sets/rule-sets.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ApplicationsComponent,
-    AppsTableComponent
+    AppsTableComponent,
+    RuleSetsComponent
   ],
   imports: [
     BrowserModule,

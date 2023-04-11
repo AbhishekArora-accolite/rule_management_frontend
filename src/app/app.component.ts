@@ -8,7 +8,7 @@ import { Router } from '@angular/router'
 })
 
 export class AppComponent {
-  title = 'Welcome to Rule Management System';
+  title = 'Rule Management System';
 
   constructor(private router:Router) {
 
