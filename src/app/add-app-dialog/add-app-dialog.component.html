@@ -1,0 +1,30 @@
+<div class="Popup">
+<h2 mat-dialog-title align="center">Enter the details for App Creation</h2>
+<mat-dialog-content>
+    <form>
+    <p align="center"><mat-form-field>
+        <input matInput [formControl]="unameFormControl" required placeholder="App Name" #appName>
+        <mat-error *ngIf="unameFormControl.hasError('required')">
+          AppName is <strong>required</strong>
+        </mat-error>
+    </mat-form-field></p>
+    <p align="center"><mat-form-field>
+        <textarea matInput [formControl]="unameFormControl" required placeholder="App Description" #appDesc></textarea>
+        <mat-error *ngIf="unameFormControl.hasError('required')">
+            AppDescription is <strong>required</strong>
+          </mat-error>
+    </mat-form-field></p>
+    <p align="center"><mat-form-field>
+        <input matInput [formControl]="unameFormControl" required placeholder="App URL" #appURL>
+        <mat-error *ngIf="unameFormControl.hasError('required')">
+          AppURL is <strong>required</strong>
+        </mat-error>
+    </mat-form-field></p>
+        </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="center">
+    <button mat-raised-button mat-dialog-close (click)="submit(appName.value, appDesc.value, appURL.value)">Ok</button>
+    <button mat-raised-button mat-dialog-close >Cancel</button>
+</mat-dialog-actions>
+</div>

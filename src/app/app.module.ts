@@ -10,13 +10,20 @@ import { MatTableModule } from '@angular/material/table'
 import {MatButtonModule} from '@angular/material/button';
 import { MatSortModule } from '@angular/material/sort';
 import { RuleSetsComponent } from './rule-sets/rule-sets.component';
+import { AddAppDialogComponent } from './add-app-dialog/add-app-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     ApplicationsComponent,
     AppsTableComponent,
-    RuleSetsComponent
+    RuleSetsComponent,
+    AddAppDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +31,13 @@ import { RuleSetsComponent } from './rule-sets/rule-sets.component';
     BrowserAnimationsModule,
     MatTableModule,
     MatButtonModule,
-    MatSortModule
+    MatSortModule,
+    MatDialogModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

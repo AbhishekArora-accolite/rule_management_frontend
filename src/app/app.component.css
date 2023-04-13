@@ -13,12 +13,12 @@
     font-weight: bold;
     width: 80px;
     margin-right: 1rem;
-    background-color: #0ea293;
     color: white;
     border: none;
+    background-color: grey;
 }
 
 .container {
-    background: #27E1C1;
     padding: 12px;
+    background-color: #72a2c0;
 }

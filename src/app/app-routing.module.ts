@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ApplicationsComponent } from './applications/applications.component';
 import { RuleSetsComponent } from './rule-sets/rule-sets.component';
 import { AppsTableComponent } from './apps-table/apps-table.component';
+import { AddAppDialogComponent } from './add-app-dialog/add-app-dialog.component';
 
 const routes: Routes = [
   {

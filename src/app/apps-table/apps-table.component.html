@@ -1,32 +1,37 @@
 <div class="container">
 
-    <button class="addAppBtn">Add App</button>
+    <button class="addAppBtn" (click)="popMenu()">Add App</button>
 
     <table mat-table [dataSource]="dataSource" class="shadow">
 
         <ng-container matColumnDef="applicationId"> 
-            <th mat-header-cell *matHeaderCellDef style="background-color:#0EA293;"> No. </th>
-            <td mat-cell *matCellDef="let element"> {{element.applicationId}} </td>
+            <th mat-header-cell *matHeaderCellDef > No. </th>
+            <td mat-cell *matCellDef="let element" > {{element.applicationId}} </td>
         </ng-container>
 
         <ng-container matColumnDef="app_name">
-            <th mat-header-cell *matHeaderCellDef style="background-color:#0EA293;"> Name </th>
+            <th mat-header-cell *matHeaderCellDef > Name </th>
             <td mat-cell *matCellDef="let element"> {{element.app_name}} </td>
         </ng-container>
 
+        <ng-container matColumnDef="app_desc">
+            <th mat-header-cell *matHeaderCellDef > Description </th>
+            <td mat-cell *matCellDef="let element"> {{element.app_desc}} </td>
+        </ng-container>
+
         <ng-container matColumnDef="last_modified_date">
-            <th mat-header-cell *matHeaderCellDef style="background-color:#0EA293;"> Last Modified Date </th>
+            <th mat-header-cell *matHeaderCellDef > Last Modified Date </th>
             <td mat-cell *matCellDef="let element"> {{element.last_modified_date}} </td>
         </ng-container>
 
         <ng-container matColumnDef="edit">
-            <th mat-header-cell *matHeaderCellDef style="background-color:#0EA293;"> Edit </th>
-            <td mat-cell *matCellDef="let element"> <button mat-flat-button color="accent" style="background-color:#0EA293; color:white">Edit</button> </td>
+            <th mat-header-cell *matHeaderCellDef > Edit </th>
+            <td mat-cell *matCellDef="let element"> <button mat-flat-button color="accent" style="background-color: darkcyan; color:white" (click)="$event.stopPropagation()" (click)="popMenu()">Edit</button> </td>
         </ng-container>
 
         <ng-container matColumnDef="delete">
-            <th mat-header-cell *matHeaderCellDef style="background-color:#0EA293;"> Delete </th>
-            <td mat-cell *matCellDef="let element"> <button mat-flat-button color="accent" style="background-color:#0EA293; color: white;" (click)="deleteRow(element.applicationId)">Delete</button> </td>
+            <th mat-header-cell *matHeaderCellDef > Delete </th>
+            <td mat-cell *matCellDef="let element"> <button mat-flat-button color="accent" style="background-color: darkcyan; color: white;" (click)="deleteRow(element.applicationId)">Delete</button> </td>
         </ng-container>
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns" style="cursor: pointer"></tr>

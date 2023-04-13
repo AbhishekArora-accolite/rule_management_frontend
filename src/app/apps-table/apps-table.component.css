@@ -1,7 +1,8 @@
 .shadow {
     box-shadow: 6px 6px rgb(151, 149, 149);
     font-size: 18px;
-    background-color: #27E1C1;
+    width: 80vw;
+    background-color: #72a2c0;
 }
 
 .row {
@@ -11,7 +12,9 @@
 .container {
     position: relative;
     width: 50rem;
-    margin: 10rem auto;
+    margin: 7% auto;
+    width: max-content;
+    height: max-content;
 }
 
 .addAppBtn {
@@ -25,7 +28,7 @@
     font-weight: bold;
     color: white;
     border: none;
-    background-color: #0EA293;
+    background-color: grey;
 }
 
 th, td {
